@@ -1,0 +1,8 @@
+node_modules
+.next
+.DS_Store
+.env
+ipfs
+output/token/*
+output/images/*
+output/*.json

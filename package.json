@@ -1,0 +1,24 @@
+{
+  "name": "meta-clone",
+  "version": "1.0.0",
+  "description": "NFT Metadata Scraper for Web3 Projects",
+  "main": "index.js",
+  "author": "Matty Woodward",
+  "type": "module",
+  "license": "MIT",
+  "dependencies": {
+    "camelcase": "^6.2.0",
+    "dotenv": "^10.0.0",
+    "fs": "^0.0.1-security",
+    "get-svg-colors": "^1.5.1",
+    "node-fetch": "^3.0.0",
+    "sharp": "^0.29.2",
+    "svgo": "^2.7.0",
+    "web3": "^1.6.0"
+  },
+  "scripts": {
+    "scrape:metadata": "node -r dotenv/config --experimental-json-modules ./scripts/scrapeMetadata.js",
+    "scrape:chain": "node -r dotenv/config --experimental-json-modules ./scripts/scrapeChainData.js",
+    "scrape:assets": "node -r dotenv/config --experimental-json-modules ./scripts/scrapeAssets.js"
+  }
+}
